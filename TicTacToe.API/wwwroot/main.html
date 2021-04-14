@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>TicTacToe</title>
+		<link
+			rel="stylesheet"
+			href="/node_modules/@yaireo/tagify/dist/tagify.css"
+		/>
+		<link
+			href="/node_modules/bootstrap/dist/css/bootstrap.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/mainpage/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<h2 class="text-center">Create game</h2>
+					<div class="row mt-3 mx-3">
+						<input
+							id="gameName"
+							type="text"
+							class="form-control"
+							placeholder="Game name"
+							aria-label="Game name"
+							aria-describedby="basic-addon1"
+						/>
+					</div>
+					<div class="row mt-3 mx-3">
+						<input
+							id="gameTags"
+							type="text"
+							class="form-control"
+							placeholder="Game tags"
+							aria-label="Game tags"
+							aria-describedby="basic-addon1"
+						/>
+					</div>
+					<div class="row mt-3 mx-3">
+						<button type="button" class="btn btn-success" id="startGame">
+							Start game
+						</button>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="row mt-3">
+						<h2 class="text-center">Find game</h2>
+						<input
+							name="tags"
+							class="some_class_name"
+							placeholder="write some tags"
+							value=""
+							of
+							Objects
+							data-blacklist=".NET,PHP"
+						/>
+					</div>
+					<div id="gameList"></div>
+				</div>
+			</div>
+		</div>
+		<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="https://unpkg.com/@yaireo/tagify"></script>
+		<script src="/src/mainpage/getTags.js"></script>
+		<script src="/src/mainpage/getGames.js"></script>
+		<script src="/src/mainpage/createGame.js"></script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"name": "asp.net",
+	"private": true,
+	"devDependencies": {
+		"@yaireo/tagify": "4.0.4",
+		"bootstrap": "5.0.0-beta3",
+		"jquery": "3.6.0"
+	}
+}

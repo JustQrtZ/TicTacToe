@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>TicTacToe</title>
+		<link
+			href="/node_modules/bootstrap/dist/css/bootstrap.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="jumbotron d-flex align-items-center min-vh-100">
+			<div class="container align-items-center w-50 p-2">
+				<div class="row">
+					<div class="input-group mb-4 w-100">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">@</span>
+						</div>
+						<input
+							id="userName"
+							type="text"
+							class="form-control"
+							placeholder="Username"
+							aria-label="Username"
+							aria-describedby="basic-addon1"
+						/>
+						<button id="loginBtn" type="button" class="btn btn-secondary">
+							Войти
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="header"></div>
+		<br />
+
+		<div id="chatroom"></div>
+		<script>
+			document
+				.getElementById("loginBtn")
+				.addEventListener("click", function () {
+					let username = document.getElementById("userName").value;
+					localStorage.setItem("username", username);
+					console.log(localStorage.getItem("username"));
+					document.location.href = window.location.href + "main.html";
+				});
+		</script>
+	</body>
+</html>
