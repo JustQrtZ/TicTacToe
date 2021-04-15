@@ -6,9 +6,9 @@
 	data.forEach((element) => {
 		$("#gameList").append(
 			`<button id=${element.id} type="button" className="btn btn-light" class="room mt-3" onclick="joinGame(this)">
-                        <div>${element.name}</div>
-                        <div>${element.status}</div>
-                        <div value=${element.tags}>${element.tags}</div>
+                        <div class="col-2">${element.name}</div>
+                        <div class="col-2">${element.status}</div>
+                        <div class="col-2" value=${element.tags}>${element.tags}</div>
                 </button>`
 		);
 	});
